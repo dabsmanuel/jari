@@ -8,7 +8,7 @@ export const footerSocials = [
     {
         id: 1,
         icon: <AiOutlineTwitter/>,
-        link: "https://twitter.com/"
+        link: "https://twitter.com/dabs_manuel"
     },
 
     {
@@ -92,7 +92,7 @@ export const potentialCards = [
 
     {
         id: 3,
-        number: 25,
-        description: "States of th federation using JARI"
+        number: '20+',
+        description: "States of the federation using JARI"
     }
 ]

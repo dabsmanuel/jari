@@ -8,6 +8,7 @@ import Signup from "./pages/signup/Signup";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About from "./pages/About";
+import Incubation from "./pages/Incubation"
 AOS.init();
 
 
@@ -20,7 +21,8 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<Signup/>}/>
-          <Route path="/about" element={<About/>}/>  
+          <Route path="/about" element={<About/>}/> 
+          <Route path="/incubation" element={<Incubation/>} />
         </Routes>
         <Footer/>
       </Router>

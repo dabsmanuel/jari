@@ -1,8 +1,6 @@
 import {useState, useEffect} from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { footerSocials, quickLinks, clientSupport } from '../../data'
-import footerLogo from "../../assets/footerLogo.png"
-
 
 
 const Footer = () => {
@@ -17,16 +15,16 @@ const Footer = () => {
 
     const location = useLocation();
 
-//   if (location.pathname === '/signup' || location.pathname === '/login') {
-//     return null; // don't render navbar on sign-up or login page
-//   }
+  if (location.pathname === '/signup' || location.pathname === '/login') {
+    return null; // don't render navbar on sign-up or login page
+  }
 
   return (
     <section className='bg-black text-white py-6'>
         <div className="w-5/6 m-auto px-4 pb-4">
             <div className="flex justify-between items-center">
                 <div>
-                    <img src={footerLogo} alt="jari logo" className="w-16" />
+                  <h2 className="logo text-xl font-bold">KOBRI</h2>
                 </div>
                 <div className='flex space-x-4'>
                     {
@@ -77,15 +75,15 @@ const Footer = () => {
                 <div className="text-sm">
                     <Link to="/signup">Join crowdfunding</Link>
                     <small className='flex font-extralight pt-2'>26 APRIL 2023</small>
-                    <small className='flex font-extralight pb-1'>BY BATMAN</small>
-                    <a href='https://nhubfoundation.org'>Nhub Foundation</a>
+                    <small className='flex font-extralight pb-1'>BY DABSMANUEL</small>
+                    <a href='https://dabsmanuel.netlify.app'>Dabs Manuel <br/></a>
                     <Link to="/about">Product information</Link>
                 </div>
                 
             </div>
         </div>
         <div className="text-center pt-8 pb-6 text-white text-sm">
-        <p>&copy; Jari all rights reserved Copyrights {date}</p>
+        <p>&copy; KOBRI all rights reserved Copyrights {date}</p>
       </div>
     </section>
   )

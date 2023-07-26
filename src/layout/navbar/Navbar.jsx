@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-import Logo from "../../assets/Logo.png"
 
 
 export default function NavBar() {
@@ -13,12 +12,12 @@ export default function NavBar() {
   }
 
     return (
-        <nav className="m-auto bg-white shadow sticky top-0">
+        <nav className="m-auto bg-white shadow sticky top-0 z-10">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex">
                 <div>   
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <NavLink to="/">
-                            <img src={Logo} alt="jari logo" className="w-20 px-4" />
+                            <h2 className="logo lg:pl-0 pl-4 text-xl font-bold">KOBRI</h2>
                         </NavLink>
                         <div className="md:hidden">
                             <button
