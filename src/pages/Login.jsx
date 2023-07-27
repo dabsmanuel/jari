@@ -86,7 +86,7 @@ const Login = () => {
           <div className="mt-6">
             <p className="text-gray-700 font-medium mb-2 text-center py-5">Or:</p>
             <div className="flex flex-col items-center justify-center mb-4">
-              <button className="flex items-center justify-center p-2 bg-zinc-900 text-white rounded-lg shadow-lg shadow-zinc-300 hover:bg-zinc-900 hover:text-white" onClick={handleGoogleSignIn}>
+              <button className="flex items-center justify-center p-2 bg-zinc-900 text-white rounded-lg shadow-lg shadow-zinc-300 hover:bg-zinc-700" onClick={handleGoogleSignIn}>
                 <FaGoogle /><span className="pl-4">Login with Google</span>
               </button>
             </div>

@@ -12,12 +12,12 @@ const Potential = () => {
             <hr className="flex-grow-1 h-px my-8 mx-4 bg-gray-600 border-0 rounded dark:bg-gray-700" />
         </div>
 
-        <div className='grid lg:grid-cols-3 grid-cols-2 w-2/3 m-auto space-x-4'>
+          <div className='grid lg:grid-cols-3 grid-cols-2 w-2/3 m-auto text-center gap-4'>
             {
                 potentialCards.map(({id, number, description})=>{
                     return(
-                        <div className='bg-gray-300 rounded p-6 text-center shadow shadow-slate-700 mb-4' key={id}>
-                            <h1 className='font-bold text-2xl pb-4'>{number}</h1>
+                        <div className='bg-gray-300 rounded p-4 shadow shadow-slate-700 ' key={id}>
+                            <h1 className='font-bold text-2xl pb-2'>{number}</h1>
                             <p>{description}</p>
                         </div>
                     )

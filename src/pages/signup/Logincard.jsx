@@ -41,7 +41,7 @@ function SignUpForm() {
   };
 
   return (
-    <div className="flex flex-col items-center rounded-lg px-10 py-10 rounded-lg mt-8 mb-32 shadow-md shadow-zinc-950">
+    <div className="flex flex-col items-center rounded-lg px-10 py-10 rounded-lg lg:mt-8 mb-32 shadow-md shadow-zinc-950 bg-white">
       <h1 className="text-3xl font-black pb-6">Create Your Account</h1>
       <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-4">
@@ -50,6 +50,7 @@ function SignUpForm() {
             id="name"
             type="text"
             placeholder="Your Full Name"
+            required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -60,6 +61,7 @@ function SignUpForm() {
             id="phone"
             type="tel"
             placeholder="Your Phone Number"
+            required
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
@@ -70,6 +72,7 @@ function SignUpForm() {
             id="password"
             type="password"
             placeholder="Your Password"
+            required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -85,7 +88,7 @@ function SignUpForm() {
         <div className="mt-6">
         <p className="text-gray-700 font-medium mb-2 text-center py-5">Or:</p>
         <div className="flex flex-col items-center justify-center mb-4">
-            <button className="flex items-center justify-center p-2 bg-zinc-900 text-white rounded-lg shadow-lg shadow-zinc-300 hover:bg-zinc-900 hover:text-white" onClick={handleGoogleSignIn}>
+            <button className="flex items-center justify-center p-2 bg-zinc-900 text-white rounded-lg shadow-lg shadow-zinc-300 hover:bg-zinc-700 " onClick={handleGoogleSignIn}>
                 <FaGoogle/><span className="pl-4">Sign up with Google</span>
             </button> 
         </div>

@@ -14,7 +14,7 @@ export const footerSocials = [
     {
         id: 2,
         icon: <TiSocialFacebook/>,
-        link: "https://facebook.com"
+        link: "https://facebook.com/dabsmanueloyibo"
     },
 
     {
@@ -34,7 +34,7 @@ export const footerSocials = [
 export const quickLinks = [
     {
         id: 1,
-        title: 'About company',
+        title: 'About KOBRI',
         link: '/about'
     },
     {
@@ -93,6 +93,6 @@ export const potentialCards = [
     {
         id: 3,
         number: '20+',
-        description: "States of the federation using JARI"
+        description: "States of the country using JARI"
     }
 ]
