@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = () => {
   return (
-    <section className='text-center lg:w-2/3 w-96 mx-auto mb-16'>
+    <section className='text-center w-2/3 mx-auto mb-16'>
         <div className="mb-16">
             <h1 className="font-bold text-2xl">
                 Don't take our word for it....
